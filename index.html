@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>18+</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<style>
+		body {
+			background: linear-gradient(180deg, #6B1A4A 0%, #2C1438 100%);
+			font-family: 'Segoe UI', system-ui, sans-serif;
+		}
+
+		.glow {
+			box-shadow: 0 0 35px rgba(255, 77, 148, 0.6);
+		}
+
+		.btn-yes {
+			background: linear-gradient(135deg, #FF4D94, #C81E6C);
+			transition: all 0.3s ease;
+		}
+
+		.btn-yes:hover {
+			transform: scale(1.05);
+			box-shadow: 0 0 25px rgba(255, 77, 148, 0.8);
+		}
+
+		.text-pink {
+			color: #F8C4D8;
+		}
+	</style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-4">
+	<div class="max-w-md w-full mx-auto text-center">
+
+		<!-- Top icons -->
+		<!-- <div class="flex justify-between items-center mb-8">
+			<i class="fa-solid fa-qrcode text-3xl text-white/80"></i>
+			<i class="fa-solid fa-share-nodes text-3xl text-white/80"></i>
+		</div> -->
+
+		<!-- Photo -->
+		<div class="flex justify-center mb-8">
+			<div class="relative">
+				<img src="./fa917a4b226be326beb96d812e5f5db4.jpg" alt="Girl"
+					class="w-52 h-52 object-cover rounded-full border-4 border-white/30 glow">
+				<div
+					class="absolute inset-0 rounded-full bg-gradient-to-b from-transparent via-transparent to-black/30">
+				</div>
+			</div>
+		</div>
+
+		<!-- Text -->
+		<h1 class="text-3xl font-light tracking-wider text-white mb-2">
+			ВАМ ЕСТЬ 18 ЛЕТ?
+		</h1>
+		<p class="text-pink text-lg mb-10">
+			ARE YOU 18 YEARS OLD?
+		</p>
+
+		<!-- Buttons -->
+		<div class="space-y-4 px-4">
+			<!-- YES -->
+			<button onclick="alert('Добро пожаловать ❤️')"
+				class="btn-yes w-full py-5 rounded-2xl text-white text-xl font-medium flex items-center justify-center gap-3 shadow-xl">
+				<i class="fa-solid fa-check text-2xl"></i>
+				<span>ДА — YES</span>
+			</button>
+
+			<!-- NO -->
+			<button onclick="alert('Извините, доступ закрыт 💔')"
+				class="w-full py-5 rounded-2xl text-white/80 text-xl font-medium flex items-center justify-center gap-3 border border-white/30 hover:border-white/50 transition-all">
+				<i class="fa-solid fa-xmark text-2xl"></i>
+				<span>НЕТ — NO</span>
+			</button>
+		</div>
+
+		<!-- Footer -->
+		<div class="mt-12 flex items-center justify-center gap-2 text-white/60 text-sm">
+			<i class="fa-solid fa-circle-info"></i>
+			<span>Только для лиц старше 18 лет</span>
+		</div>
+
+		<!-- <div class="mt-6 flex items-center justify-center gap-2">
+			<div class="w-6 h-6 bg-white/10 rounded-full flex items-center justify-center">
+				<span class="text-xs">🔗</span>
+			</div>
+			<span class="text-white/50 text-sm">HeyLink.me</span>
+		</div> -->
+	</div>
+</body>
+
+</html>
